@@ -12,6 +12,8 @@ class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
         
+        // second method
+        
         vector<ListNode*> v = {head};
         while(v.back()->next!=NULL){
             v.push_back(v.back()->next);
@@ -19,7 +21,8 @@ public:
         return v[(int)v.size()/2];
         
         
-        
+        //first method
+
 //       int count=0;
 //         ListNode* temp = head;
 //         while(temp!=NULL){

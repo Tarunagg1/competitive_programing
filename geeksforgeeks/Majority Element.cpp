@@ -1,6 +1,5 @@
 /*
 Given an array A of N elements. Find the majority element in the array. A majority element in an array A of size N is an element that appears more than N/2 times in the array.
- 
 
 Example 1:
 
@@ -32,7 +31,6 @@ The task is to complete the function majorityElement() which returns the majorit
 Expected Time Complexity: O(N).
 Expected Auxiliary Space: O(1).
  
-
 Constraints:
 1 <= N <= 107
 0 <= Ai <= 106
@@ -40,30 +38,39 @@ Constraints:
 */
 
 int majorityElement(int arr[], int n)
+{
+
+    int count = 1;
+    int res = 0;
+    for (int i = 0; i < n; i++)
     {
-        
-        int count =1;int res = 0;
-        for(int i=0; i<n; i++){
-            if(arr[res] == arr[i]){
-                count++;
-            }else{
-                count--;
-            }
-            if(count == 0){
-                count = 1;
-                res = i;
-            }
-        }
-        
-        count = 0;
-        for(int i=0; i<n; i++){
-            if(arr[res] == arr[i]){
-                count++;
-            }
-        }
-        if(count <= (n/2)){
-            return -1;
+        if (arr[res] == arr[i])
+        {
+            count++;
         }
         else
-            return arr[res];
+        {
+            count--;
+        }
+        if (count == 0)
+        {
+            count = 1;
+            res = i;
+        }
     }
+
+    count = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[res] == arr[i])
+        {
+            count++;
+        }
+    }
+    if (count <= (n / 2))
+    {
+        return -1;
+    }
+    else
+        return arr[res];
+}

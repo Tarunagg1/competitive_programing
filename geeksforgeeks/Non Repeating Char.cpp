@@ -1,4 +1,4 @@
-// Non-Repeating Element 
+// Non-Repeating Element
 // Easy Accuracy: 57.13% Submissions: 8975 Points: 2
 // Find the first non-repeating element in a given array arr of N integers.
 // Note: Array consists of only positive and negative integers and not zero.
@@ -8,10 +8,9 @@
 // Input : arr[] = {-1, 2, -1, 3, 2}
 // Output : 3
 // Explanation:
-// -1 and 2 are repeating whereas 3 is 
+// -1 and 2 are repeating whereas 3 is
 // the only number occuring once.
-// Hence, the output is 3. 
- 
+// Hence, the output is 3.
 
 // Example 2:
 
@@ -29,70 +28,31 @@
 // -1016 <= Ai <= 1016
 // {Ai !=0 }
 
- 
 class Solution
 {
-    public:
-    //Function to find the first non-repeating character in a string.
+public:
+    // Function to find the first non-repeating character in a string.
     char nonrepeatingCharacter(string s)
     {
-       //Your code here
-       int chars = 256;
-       int n = s.size();
-       
+        // Your code here
+        int chars = 256;
+        int n = s.size();
+
         int arr[chars];
-        fill(arr,arr+chars,0);
-       for(int i=0; i<n; i++){
-           arr[s[i]]++;
-       }
-       
-       for(int i=0; i<n; i++){
-           if(arr[s[i]] == 1){
-               return (char)s[i];
-           }
-       }
-       
-       return '$';
-       
+        fill(arr, arr + chars, 0);
+        for (int i = 0; i < n; i++)
+        {
+            arr[s[i]]++;
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            if (arr[s[i]] == 1)
+            {
+                return (char)s[i];
+            }
+        }
+
+        return '$';
     }
-
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

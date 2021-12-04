@@ -37,7 +37,6 @@ Expected Auxiliary Space: O(R*C)
 Constraints:
 1 <= R, C <= 100
 0 <= matrixi <= 100
-
 */
 
  vector<int> spirallyTraverse(vector<vector<int> > matrix, int r, int c) 
@@ -61,7 +60,7 @@ Constraints:
                     res.push_back(matrix[bottom][i]);
                 bottom--;
             }
-            
+
             if(left<=right){
                 for(int i=bottom; i>=top; i--)
                     res.push_back(matrix[i][left]);

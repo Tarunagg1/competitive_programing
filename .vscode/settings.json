@@ -1,10 +1,6 @@
 {
     "files.associations": {
-        "chrono": "cpp",
-        "random": "cpp",
-        "limits": "cpp",
-        "valarray": "cpp",
-        "bitset": "cpp",
-        "algorithm": "cpp"
+        "ostream": "cpp",
+        "unordered_map": "cpp"
     }
 }

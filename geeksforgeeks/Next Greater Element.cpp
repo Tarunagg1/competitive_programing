@@ -39,7 +39,30 @@
 // View Bookmarked Problems
 
 
-
+// Your code here
+       vector<long long> result(n);
+       int i;
+       stack<int>index;
+       for(i = 0 ; i < n ; i++)
+       result[i] = -1;
+       index.push(0);
+       for(i = 1 ; i < n ; i++)
+       {
+           if(arr[i] <= arr[index.top()])
+           {
+               index.push(i);
+           }
+           else
+           {
+               while(!index.empty() && arr[i] > arr[index.top()])
+               {
+               result[index.top()] =  arr[i];
+                   index.pop();
+               }
+               index.push(i);
+           }
+       }
+      return result; 
 
 
 

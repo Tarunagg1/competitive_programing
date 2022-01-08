@@ -1,0 +1,7 @@
+# Type of design pattern
+1. Creational Design pattern
+2. Structural design pattern
+3. Behavioral design pattern
+
+
+

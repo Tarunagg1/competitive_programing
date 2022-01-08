@@ -10,6 +10,8 @@ class Logger
     static int ctr;
     static Logger *loggerInstance;
     Logger();
+    Logger(const Logger);
+    Logger operator=(const Logger &);
 
 public:
     static Logger *getLogger();

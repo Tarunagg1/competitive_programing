@@ -38,6 +38,53 @@
 // The sum of all baskets with fruits of type 4 is 0 because there are no such baskets.
 // Chef can only choose fruits of type 1, 2 or 3. Therefore, the minimum price he has to pay is 5.
 
+#include <iostream>
+#include<cstring>
+#include<climits>
+
+
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	
+	while(t--){
+	    int n,m;
+	    cin>>n>>m;
+	    
+	    int f[n],p[n];
+	    for(int i=0; i<n; i++){
+	        cin>>f[i];
+	    }
+	    for(int i=0; i<n; i++){
+	        cin>>p[i];
+	    }
+	    
+	    int freq[m+1];
+	    bool avilable[m+1];
+	    memset(avilable,false,sizeof(avilable));
+	    memset(freq,false,sizeof(freq));
+	       
+	       for(int i=0; i<n; i++){
+	           freq[f[i]]+=p[i];
+	           avilable[f[i]] = true;
+	       }
+	       int min = INT_MAX;
+	       
+	       for(int i=0; i<=m; i++){
+	           if(freq[i] < min && avilable[i] == true){
+	               min = freq[i];
+	           }
+	       }
+	       cout<<min<<endl;
+	}
+	return 0;
+}
+
+
+
 
 
 

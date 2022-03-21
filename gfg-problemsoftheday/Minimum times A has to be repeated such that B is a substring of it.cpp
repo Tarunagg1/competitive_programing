@@ -40,25 +40,25 @@
 // Company Tags
 
 
-
 class Solution {
   public:
     int minRepeats(string A, string B) {
         // code here
-       int n;
-        int N=B.size();
-        //cout<<" N = "<<N<<endl;
-        for(int i=0;i<N;i++){
-           cout<<" A = "<<A<<"  B= "<<B<<endl;
-            n=A.find(B);
-            
-            if(n!=-1)
-            {
-                return i+1;
-            }
-            A=A+A;
-        }
-        return -1;
+       string temp = A;
+       
+       int count = 1;
+       
+       while(A.length() < B.length()){
+           A+= temp;
+           count+=1;
+       }
+       if(A.find(B) != -1) return count;
+       A+=temp;
+       
+       count+=1;
+       
+       if(A.find(B) != -1) return count;
+       return -1;       
     }
 };
 

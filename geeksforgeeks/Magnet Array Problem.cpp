@@ -52,6 +52,7 @@ public:
                 low = mid;
             else if (netForce < -minForce)
                 high = mid;
+                
             else
                 return mid;
         }

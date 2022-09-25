@@ -7,8 +7,6 @@
 // 4. If a player cannot make a move, he loses.
 // Assume that both the players play optimally.
 
- 
-
 // Example 1:
 
 // Input:
@@ -18,15 +16,12 @@
 // Explanation:
 // N = 8
 // N = 1000 (binary)
-// Player 1 swaps the 1st 
+// Player 1 swaps the 1st
 // and 4th bit.
 // 1000
 // N = 0001
-// Player 2 cannot make a move, 
+// Player 2 cannot make a move,
 // so Player 1 wins.
- 
-
- 
 
 // Example 2:
 
@@ -36,73 +31,48 @@
 // 2
 // Explanation:
 // N = 1
-// Player 1 cannot make 
+// Player 1 cannot make
 // a move, so Player 2 wins.
- 
 
 // Your Task:
 
 // You don't need to read input or print anything. Your task is to complete the function swapBitGame() which takes an integer N and returns "1" if Player 1 wins, else return "2".
 
- 
-
 // Expected Time Complexity: O(log(N))
 // Expected Auxiliary Space: O(1)
 
- 
-
-// Constraints : 
+// Constraints :
 // 1 <= N <= 10^12
 
- 
-
-
-
-
-class Solution{   
+class Solution
+{
 public:
-    int swapBitGame(long long N){
-        // code here 
-         long xo = 0;
+    int swapBitGame(long long N)
+    {
+        // code here
+        long xo = 0;
 
         long o = 0;
 
-        while(N != 0){
+        while (N != 0)
+        {
 
-            if(N%2 != 0 && o > 0){
+            if (N % 2 != 0 && o > 0)
+            {
 
                 xo ^= o;
-
             }
 
-            if(N%2 == 0) o++;
+            if (N % 2 == 0)
+                o++;
 
-            N/=2;
-
+            N /= 2;
         }
 
-        if(xo!=0) return 1;
+        if (xo != 0)
+            return 1;
 
-        else return 2;
+        else
+            return 2;
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

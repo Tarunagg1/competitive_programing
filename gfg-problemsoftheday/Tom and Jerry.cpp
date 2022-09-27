@@ -22,18 +22,17 @@
 // Output:
 // 1
 // Explanation:
-// 1st turn: Tom subtract 1 from N as 1 is 
+// 1st turn: Tom subtract 1 from N as 1 is
 // a divisor of 4 and less than 4.
 
-// 2nd turn: N=3, Jerry has to subtract 1 as 1 
+// 2nd turn: N=3, Jerry has to subtract 1 as 1
 // is the only divisor of 3 which is less than 3.
 
-// 3rd turn: N=2, Tom subtract 1 as 1 is the 
+// 3rd turn: N=2, Tom subtract 1 as 1 is the
 // only divisor of 2 which is less than 2.
 
 // 4th turn: N=1, Jerry can't subtract any value.
 // So, Tom wins.
- 
 
 // Your Task:
 // You don't need to read input or print anything. Your task is to complete the function numsGame() which takes an Integer N as input and returns 1 if Tom wins else returns 0.
@@ -44,31 +43,12 @@
 // Constraints:
 // 1 ≤ N ≤ 108
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class Solution
+{
+public:
+    int numsGame(int N)
+    {
+        // code here
+        return N % 2 == 0;
+    }
+};

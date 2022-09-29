@@ -15,11 +15,11 @@
 // Example 2:
 
 // Input: arr[] = {1, 2, 4},
-//        brr[] = {1, 2, 3} and n = 3 
+//        brr[] = {1, 2, 3} and n = 3
 // Output: NO
-// Explanation: 
-// As 1<=1, 2<=2 but 4>3 so, 
-// arr[] array will not fit in brr[] array. 
+// Explanation:
+// As 1<=1, 2<=2 but 4>3 so,
+// arr[] array will not fit in brr[] array.
 
 // Your Task:
 
@@ -32,51 +32,28 @@
 // 1 ≤ N ≤ 105
 // 0 ≤ a[i], b[i] ≤ 105
 
-
-class Solution{
+class Solution
+{
 public:
-    
-    bool isFit(int arr[], int brr[], int n){
+    bool isFit(int arr[], int brr[], int n)
+    {
         // code here
-        sort(arr,arr+n);
+        sort(arr, arr + n);
 
-        sort(brr,brr+n);
+        sort(brr, brr + n);
 
-        
-
-        for(int i=0;i<n;i++)
+        for (int i = 0; i < n; i++)
 
         {
 
-            if(arr[i]>brr[i])
+            if (arr[i] > brr[i])
 
             {
 
                 return false;
-
             }
-
         }
 
         return true;
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

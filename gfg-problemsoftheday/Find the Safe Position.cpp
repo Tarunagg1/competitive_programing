@@ -32,39 +32,15 @@
 // Constraints:
 // 1 <= n,k <= 500
 
-
-class Solution {
-  public:
-    int safePos(int n, int k) {
+class Solution
+{
+public:
+    int safePos(int n, int k)
+    {
         // code here
-        if(n==1) return 1;
-        int t = safePos(n-1,k);
-        return (t+k-1)%n +1; 
+        if (n == 1)
+            return 1;
+        int t = safePos(n - 1, k);
+        return (t + k - 1) % n + 1;
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -16,8 +16,7 @@ Array.prototype.myEach = function (cb) {
 Array.prototype.myMap = function (cb) {
     let arr = [];
     for (let index = 0; index < this.length; index++) {
-        arr.push(this[index]);
-        cb(this[index], index);
+        arr.push(cb(this[index], index, this));
     }
     return arr;
 }
@@ -39,8 +38,12 @@ Array.prototype.myReduce = function (cb, initial) {
 
 // filter pollyfill
 
-Array.prototype.myFilter = function (cb, contect) {
-
+Array.prototype.myFilter = function (cb) {
+    let temp = [];
+    for (let index = 0; index < this.length; index++) {
+        if (cb(this[index], i, this)) temp.push(this[index]);
+    }
+    return temp;
 }
 
 // let final = arr.filter((p,c) => p > 2);
@@ -100,6 +103,11 @@ const flattenArr = (oldArr) => {
     })
 
     return flatArr;
-}W
+}
 
 
+const re = arr.myMap((ele, i) => {
+    return ele * 3
+})
+
+console.log(re);

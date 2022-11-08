@@ -13,7 +13,7 @@ const countUniqueNumbers = (arr) => {
     }
 }
 
-console.log(countUniqueNumbers([9, 8, 7, 6, 5, 4, 3, 2, 1,10]));
+console.log(countUniqueNumbers([9, 8, 7, 6, 5, 4, 3, 2, 1, 10]));
 
 // /var/www/html/latest_drupal/drupal/sites/all/themes/new_101_india_theme/templates
 // 65.0.61.82

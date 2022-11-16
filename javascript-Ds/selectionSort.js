@@ -1,13 +1,14 @@
-const selectionSort = (array) =>  {
+const selectionSort = (array) => {
+    let temp;
     for (let index = 0; index < array.length; index++) {
         let min = index;
-        for(let j=index+1; j < array.length; j++) {
-            if(array[j] < array[min]) {
+        for (let j = index + 1; j < array.length; j++) {
+            if (array[j] < array[min]) {
                 min = j;
             }
         }
-        if(index !== min){
-            let temp = array[index];
+        if(min != index) {  
+            temp = array[index];
             array[index] = array[min];
             array[min] = temp;
         }

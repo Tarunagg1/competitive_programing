@@ -52,7 +52,7 @@ public:
             s.insert(arr[r]);
             while ((*(--s.end()) - *(s.begin())) > 1)
             {
-                s.erase(s.find(arr[l]));
+                s.erase(s.find(arr[l])); 
                 l++;
             }
             if ((*(--s.end()) - *(s.begin())) <= 1)

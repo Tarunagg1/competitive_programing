@@ -27,26 +27,24 @@
 // View Bookmarked Problems
 // Topic Tags
 
-class Solution
-{
-public:
-    long long int maxSumLCM(int n)
+class Solution {
+  public:
+    long long int maxSumLCM(int n) 
     {
         // code here
-        int ans = 0;
-
-        // code here
-
-        for (int i = 1; i <= n; i++)
+        long long int ans = 0;
+        
+        for(int i=1; i*i<=n; i++)
         {
-
-            if (n % i == 0)
+            if(n%i==0)
             {
-
-                ans = ans + i;
+                ans+=i;
+                long long int m = n/i;
+                if(m!=i)
+                    ans+=m;
             }
         }
-
+                
         return ans;
     }
 };

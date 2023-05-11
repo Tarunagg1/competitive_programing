@@ -1,7 +1,6 @@
 // Total Cuts
 // EasyAccuracy: 72.59%Submissions: 6K+Points: 2
 // Finding a high paying job is easier than today's problem! Attend Job Fair 2023
- 
 
 // You are given an array A of N integers and an integer K, and your task is to find the total number of cuts that you can make such that for each cut these two conditions are satisfied
 // 1. A cut divides an array into two parts equal or unequal length (non-zero).
@@ -42,56 +41,35 @@
 // 0 <= K <= 10^6
 // 0 <= A[i] <= 10^6
 
-// View Bookmarked Problems 
+// View Bookmarked Problems
 
-
-class Solution{
+class Solution
+{
 public:
-    int totalCuts(int N,int K,vector<int> &A){
+    int totalCuts(int N, int K, vector<int> &A)
+    {
         // Code here
-         int count=0;
-        int mn[N],mx[N];
-        mx[0]=A[0];
-        
+        int count = 0;
+        int mn[N], mx[N];
+        mx[0] = A[0];
+
         // max from left to right
-        for(int i=1;i<N;i++)
+        for (int i = 1; i < N; i++)
         {
-            mx[i]=max(mx[i-1],A[i]);
+            mx[i] = max(mx[i - 1], A[i]);
         }
-        
+
         // min from right to left
-        mn[N-1]=A[N-1];
-        for(int i=N-2;i>=0;i--)
-           mn[i]=min(mn[i+1],A[i]);
-           
+        mn[N - 1] = A[N - 1];
+        for (int i = N - 2; i >= 0; i--)
+            mn[i] = min(mn[i + 1], A[i]);
+
         // counting the cuts
-        for(int i=0;i<N-1;i++)
+        for (int i = 0; i < N - 1; i++)
         {
-            if(mx[i]+mn[i+1]>=K) count++;
+            if (mx[i] + mn[i + 1] >= K)
+                count++;
         }
         return count;
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

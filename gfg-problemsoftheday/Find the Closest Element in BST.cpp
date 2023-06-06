@@ -15,7 +15,7 @@
 //       \
 //        4
 // K = 13
-// Output: 
+// Output:
 // 2
 // Explanation: K=13. The node that has
 // value nearest to K is 11. so the answer
@@ -31,7 +31,7 @@
 //     /
 //    3
 // K = 9
-// Output: 
+// Output:
 // 0
 // Explanation: K=9. The node that has
 // value nearest to K is 9. so the answer
@@ -46,50 +46,24 @@
 // 1 <= Number of nodes <= 105
 // 1 <=data<= 105
 
-// View Bookmarked Problems 
-
-
+// View Bookmarked Problems
 
 class Solution
 {
-    public:
-    //Function to find the least absolute difference between any node
-	//value of the BST and the given integer.
+public:
+    // Function to find the least absolute difference between any node
+    // value of the BST and the given integer.
     int minDiff(Node *root, int K)
     {
-        //Your code here
-             if(root == NULL)
-        return INT_MAX;
-        
+        // Your code here
+        if (root == NULL)
+            return INT_MAX;
+
         int diff = abs(K - root->data);
-        
-        int left = minDiff(root -> left,K);
-        int right = minDiff(root -> right,K);
-        
-        return min(diff , min(left,right));
+
+        int left = minDiff(root->left, K);
+        int right = minDiff(root->right, K);
+
+        return min(diff, min(left, right));
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

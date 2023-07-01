@@ -1,9 +1,10 @@
 const debouce = (cb, d) => {
     let timer;
     return (...args) => {
-        if (timer) clearinterval(timer);
-        timer = setInterval(() => {
+        if (timer) clearTimeout(timer);
+        timer = setTimoeut(() => {
             return cb(...args);
         }, d);
     }
 }
+

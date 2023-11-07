@@ -58,6 +58,7 @@
 // 1 <= N <= 103
 // 1 <= matrix[i][j] <= 106
 
+
 class Solution
 {
 public:
@@ -65,22 +66,25 @@ public:
     vector<int> sumTriangles(const vector<vector<int>> &matrix, int n)
     {
         // code here
-        int up = 0, down = 0;
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0; j < n; j++)
-            {
-                if (i < j)
-                    up += matrix[i][j];
-                else if (i > j)
-                    down += matrix[i][j];
-                else
-                {
-                    up += matrix[i][j];
-                    down += matrix[i][j];
-                }
+             vector<int>ans;
+        int sum=0;
+        
+        for(int i=0;i<n;i++){
+            for(int j=i;j<n;j++){
+                sum+=matrix[i][j];
             }
         }
-        return {up, down};
+        ans.push_back(sum);
+        sum=0;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<i+1;j++){
+                sum+=matrix[i][j];
+            }
+        }
+        ans.push_back(sum);
+        return ans;
     }
 };
+
+
+

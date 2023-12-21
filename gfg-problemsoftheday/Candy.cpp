@@ -1,6 +1,6 @@
 // Candy
 // HardAccuracy: 55.27%Submissions: 12K+Points: 8
-// Fast-Track your resumes to top tech companies and get the job you deserve! Register for hiring challenge exclusively for Freshers  
+// Fast-Track your resumes to top tech companies and get the job you deserve! Register for hiring challenge exclusively for Freshers
 
 // banner
 // There are N children standing in a line. Each child is assigned a rating value given in the integer array ratings.
@@ -15,18 +15,18 @@
 // Input:
 // N = 3
 // ratings = [1, 0, 2]
-// Output: 
+// Output:
 // 5
-// Explanation: 
+// Explanation:
 // You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
 // Example 2:
 
 // Input:
 // N = 3
 // ratings = [1, 2, 2]
-// Output: 
+// Output:
 // 4
-// Explanation: 
+// Explanation:
 // You can allocate to the first, second and third child with 1, 2, 1 candies respectively.
 // The third child gets 1 candy because it statisfies the above two conditions.
 // Your Task:
@@ -39,56 +39,32 @@
 // 1 ≤ N ≤ 105
 // 0 ≤ ratingsi ≤ 109
 
-
-
-
-
-
-class Solution {
-  public:
-    int minCandy(int N, vector<int> &ratings) {
+class Solution
+{
+public:
+    int minCandy(int N, vector<int> &rat)
+    {
         // code here
-            vector<int>l(N,1),r(N,1);
-        for(int i=1;i<N;++i){
-            if(rat[i-1]<rat[i]){
-                l[i] = l[i-1]+1;
+        vector<int> l(N, 1), r(N, 1);
+        for (int i = 1; i < N; ++i)
+        {
+            if (rat[i - 1] < rat[i])
+            {
+                l[i] = l[i - 1] + 1;
             }
         }
-        for(int i=N-2;i>=0;--i){
-            if(rat[i+1]<rat[i]){
-                r[i] = r[i+1]+1;
+        for (int i = N - 2; i >= 0; --i)
+        {
+            if (rat[i + 1] < rat[i])
+            {
+                r[i] = r[i + 1] + 1;
             }
         }
         int ans = 0;
-        for(int i=0;i<N;++i){
-            ans = ans + max(l[i],r[i]);
+        for (int i = 0; i < N; ++i)
+        {
+            ans = ans + max(l[i], r[i]);
         }
         return ans;
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

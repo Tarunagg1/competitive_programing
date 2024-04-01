@@ -1,57 +1,59 @@
-day01  03/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone) || java(undone) || react(undone) || prepare(undone) | golang(undone) 
+day01  04/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone) || java(undone) || react(undone) || prepare(undone) | golang(undone) 
 
-day02  03/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) ||  react(undone) || java(undone) || prepare(undone) | iotric(undone) 
+day02  04/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) ||  react(undone) || java(undone) || prepare(undone) | iotric(undone) 
 
-day03  03/03/24  -> Commpativepro(undone) || englishdone) ||  mern(undone) || nest(undone)  || react(undone) || prepare(undone) || iotric(undone) 
+day03  03/04/24  -> Commpativepro(undone) || englishdone) ||  mern(undone) || nest(undone)  || react(undone) || prepare(undone) || iotric(undone) 
 
-day04  04/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone) || next(undone) || prepare(undone) || iotric(undone) || react(undone) personality(undone) 
+day04  04/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone) || next(undone) || prepare(undone) || iotric(undone) || react(undone) personality(undone) 
 
-day05  05/03/24  -> Commpativepro(undone) || english(undone) ||  redis(undone) || java(undone) || iotric(undone) || mern(undone) | prepare(undone) || personality(undone) 
+day05  05/04/24  -> Commpativepro(undone) || english(undone) ||  redis(undone) || java(undone) || iotric(undone) || mern(undone) | prepare(undone) || personality(undone) 
 
-day06  06/03/24  -> Commpativepro(undone) || english(undone) ||  java(undone) || nest(undone)  || react(undone) || mern(undone) || graphql(undone) | prepare(undone) || typeorm(undone) 
+day06  06/04/24  -> Commpativepro(undone) || english(undone) ||  java(undone) || nest(undone)  || react(undone) || mern(undone) || graphql(undone) | prepare(undone) || typeorm(undone) 
 
-day07  07/03/24  -> Commpativepro(undone) || english(undone) ||  redis(undone) || nest(undone) || mern(undone) || personality(undone) | prepare(undone) || react(undone) 
+day07  07/04/24  -> Commpativepro(undone) || english(undone) ||  redis(undone) || nest(undone) || mern(undone) || personality(undone) | prepare(undone) || react(undone) 
 
-day08  08/03/24  -> Commpativepro(undone) || english(undone) ||  java(undone) || mern(undone)  || iotric(undone) || T3(undone) || react(undone) | prepare(undone) || typeorm(undone) 
+day08  08/04/24  -> Commpativepro(undone) || english(undone) ||  java(undone) || mern(undone)  || iotric(undone) || T3(undone) || react(undone) | prepare(undone) || typeorm(undone) 
 
-day09   09/03/24  -> Commpativepro(undone) || english(undone) ||  iotric(undone) || T3(undone)  || react(undone) || mern(undone) || prepare(undone) | golang(undone) 
+day09   09/04/24  -> Commpativepro(undone) || english(undone) ||  iotric(undone) || T3(undone)  || react(undone) || mern(undone) || prepare(undone) | golang(undone) 
 
-day10  10/03/24  -> Commpativepro(undone) || english(undone) ||  personality(undone) || mern(undone) || react(undone) || personality(undone) || prepare(undone) || iotric(undone) 
+day10  10/04/24  -> Commpativepro(undone) || english(undone) ||  personality(undone) || mern(undone) || react(undone) || personality(undone) || prepare(undone) || iotric(undone) 
 
-day11 11/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || react(undone)  || iotric(undone)  || personality(undone) || next(undone) || prepare(undone) || java(undone) 
+day11 11/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || react(undone)  || iotric(undone)  || personality(undone) || next(undone) || prepare(undone) || java(undone) 
 
-day12  12/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || personality(undone)  || iotric(undone)  || react(undone) || merng(undone) || prepare(undone) || canva(undone) 
+day12  12/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || personality(undone)  || iotric(undone)  || react(undone) || merng(undone) || prepare(undone) || canva(undone) 
  
-day13  13/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) ||  react(undone) || next(undone) || prepare(undone) || golang(undone) 
+day13  13/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) ||  react(undone) || next(undone) || prepare(undone) || golang(undone) 
 
-day14  14/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone)  || java(undone) || prepare(undone) | golang(undone) || Threejs(undone) 
+day14  14/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone)  || java(undone) || prepare(undone) | golang(undone) || Threejs(undone) 
 
-day15   15/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || Threejs(undone)  || nest(undone) || iotric(undone) || next(undone) || prepare(undone) | golang(undone) 
+day15   15/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || Threejs(undone)  || nest(undone) || iotric(undone) || next(undone) || prepare(undone) | golang(undone) 
 
-day16  16/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || grapphql(undone)  || design(undone)  || prepare(undone) || next(undone) || iotric(undone) 
+day16  16/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || grapphql(undone)  || design(undone)  || prepare(undone) || next(undone) || iotric(undone) 
 
-day17  17/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || T3(undone)  || grapphql(undone) || iotric(undone) || prepare(undone) || node(undone) 
+day17  17/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || T3(undone)  || grapphql(undone) || iotric(undone) || prepare(undone) || node(undone) 
 
-day18  18/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || react(undone)  || micro(undone) || iotric(undone) || prepare(undone) || T3(undone) 
+day18  18/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || react(undone)  || micro(undone) || iotric(undone) || prepare(undone) || T3(undone) 
 
-day19  19/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || react(undone) || iotric(undone) || node(undone) || Threejs(undone) | prepare(undone) 
+day19  19/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || react(undone) || iotric(undone) || node(undone) || Threejs(undone) | prepare(undone) 
 
-day20  20/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || react(undone) || graphql(undone) || interview(undone) || prepare(undone) | node(undone) 
+day20  20/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || react(undone) || graphql(undone) || interview(undone) || prepare(undone) | node(undone) 
 
-day21  21/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || graphql(undone) || interview(undone) || prepare(undone) | golang(undone) 
+day21  21/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || graphql(undone) || interview(undone) || prepare(undone) | golang(undone) 
 
-day22  22/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || interview(undone) || iotric(undone) || next(undone) || prepare(undone) | node(undone) 
+day22  22/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || interview(undone) || iotric(undone) || next(undone) || prepare(undone) | node(undone) 
 
-day23  23/03/24  -> Commpativepro(undone) || english(undone) ||  iotric(undone) || interview(undone)  || react(undone)  || micro(undone) || prepare(undone) 
+day23  23/04/24  -> Commpativepro(undone) || english(undone) ||  iotric(undone) || interview(undone)  || react(undone)  || micro(undone) || prepare(undone) 
 
-day24  24/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || react(undone) || next(undone) || prepare(undone) || iotric(undone) || interview(undone) 
+day24  24/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || react(undone) || next(undone) || prepare(undone) || iotric(undone) || interview(undone) 
 
-day25  25/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || freelance(undone)  || react(undone) || iotric(undone) || prepare(undone) || node(undone) || next(undone) 
+day25  25/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || freelance(undone)  || react(undone) || iotric(undone) || prepare(undone) || node(undone) || next(undone) 
 
-day26  26/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone)  || react(undone) || interview(undone) || T3(undone) | prepare(undone) 
+day26  26/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone)  || react(undone) || interview(undone) || T3(undone) | prepare(undone) 
 
-day27  27/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || next(undone)   || react(undone) || personality(undone) || prepare(undone) || golang(undone) 
+day27  27/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || next(undone)   || react(undone) || personality(undone) || prepare(undone) || golang(undone) 
 
-day28  28/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || interview(undone)  || java(undone)  || nodejs(undone) || next(undone) || prepare(undone) 
+day28  28/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || interview(undone)  || java(undone)  || nodejs(undone) || next(undone) || prepare(undone) 
 
-day29   29/03/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone)  || iotric(undone) || docker(undone) || next(undone) || prepare(undone) | angular(undone) 
+day29   29/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone)  || iotric(undone) || docker(undone) || next(undone) || prepare(undone) | angular(undone) 
+
+day30   30/04/24  -> Commpativepro(undone) || english(undone) ||  mern(undone) || nest(undone)  || iotric(undone) || docker(undone) || next(undone) || prepare(undone) | angular(undone) 

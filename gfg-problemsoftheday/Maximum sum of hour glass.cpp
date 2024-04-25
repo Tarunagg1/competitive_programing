@@ -49,16 +49,24 @@ public:
     int findMaxSum(int n, int m, vector<vector<int>> mat)
     {
         // code
-        if (n < 3 || m < 3)
-            return -1;
-        int ans = 0;
-        for (int i = 1; i < n - 1; i++)
+        int row_size = mat.size();
+        int col_size = mat[0].size();
+        int ans = -1, sum = 0;
+
+        for (int i = 0; i < row_size; i++)
         {
-            for (int j = 1; j < m - 1; j++)
+            for (int j = 0; j < col_size; j++)
             {
-                int sum = mat[i][j] + mat[i + 1][j] + mat[i - 1][j] +
-                          mat[i - 1][j - 1] + mat[i + 1][j + 1] + mat[i - 1][j + 1] + mat[i + 1][j - 1];
-                ans = Math.max(sum, ans);
+                if (i + 2 < row_size && j + 2 < col_size)
+                {
+                    sum = mat[i][j] + mat[i + 1][j + 1] + mat[i][j + 1] + mat[i][j + 2] + mat[i + 2][j + 2] + mat[i + 2][j] + mat[i + 2][j + 1];
+                    ans = max(ans, sum);
+                }
+                else
+                {
+                    sum = -1;
+                }
+                ans = max(ans, sum);
             }
         }
         return ans;

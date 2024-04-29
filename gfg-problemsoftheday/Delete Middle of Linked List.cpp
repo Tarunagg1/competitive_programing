@@ -10,13 +10,13 @@
 
 // Input:
 // LinkedList: 1->2->3->4->5
-// Output: 
+// Output:
 // 1 2 4 5
 // Example 2:
 
 // Input:
 // LinkedList: 2->4->6->7->5->1
-// Output: 
+// Output:
 // 2 4 6 5 1
 // Your Task:
 // The task is to complete the function deleteMid() which takes head of the linkedlist  and return head of the linkedlist with middle element deleted from the linked list. If the linked list is empty or contains single element then it should return NULL.
@@ -28,45 +28,22 @@
 // 1 <= n <= 105
 // 1 <= value[i] <= 109
 
-
-
-
-class Solution{
-    public:
-    Node* deleteMid(Node* head)
+class Solution
+{
+public:
+    Node *deleteMid(Node *head)
     {
         // Your Code Here
-        
-           // Your Code Here
-        Node *fast=head,*slow=head,*pre=head;
-        while(fast && fast->next){
-            fast=fast->next->next;
-            pre=slow;
-            slow=slow->next;
+
+        // Your Code Here
+        Node *fast = head, *slow = head, *pre = head;
+        while (fast && fast->next)
+        {
+            fast = fast->next->next;
+            pre = slow;
+            slow = slow->next;
         }
-        pre->next=slow->next;
+        pre->next = slow->next;
         return head;
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

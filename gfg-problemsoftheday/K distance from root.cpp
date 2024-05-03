@@ -41,50 +41,51 @@
 // 1 <= n <= 104
 // 0 <= k <= 30
 
-vector<int> Kdistance(struct Node *root, int k)
+
+class Solution
 {
-    // If k is 0, return the data of the current node
-    if (k == 0)
-        return {root->data};
-
-    // Initialize an empty queue and push the root node into it
-    queue<Node *> q;
-    q.push(root);
-
-    // Traverse the tree using BFS
-    while (!q.empty())
+    public:
+    // function should print the nodes at k distance from root
+     vector<int> Kdistance(struct Node *root, int k)
     {
-        // Get the size of the current level
-        int sz = q.size();
-
-        // If k is 0, return the data of the nodes at this level
-        if (k == 0)
+        // If k is 0, return the data of the current node
+        if(k == 0) return {root->data};
+        
+        // Initialize an empty queue and push the root node into it
+        queue<Node*> q;
+        q.push(root);
+        
+        // Traverse the tree using BFS
+        while(!q.empty())
         {
-            vector<int> ans;
-            for (int i = 0; i < sz; ++i)
+            // Get the size of the current level
+            int sz = q.size();
+            
+            // If k is 0, return the data of the nodes at this level
+            if(k == 0)
             {
-                Node *temp = q.front();
-                q.pop();
-                ans.push_back(temp->data);
+                vector<int> ans;
+                for(int i = 0; i<sz; ++i)
+                {
+                    Node* temp = q.front(); q.pop();
+                    ans.push_back(temp->data);
+                }
+                return ans;
             }
-            return ans;
+            
+            // Pop the nodes from the front of the queue and push their children into the queue
+            for(int i =0 ; i<sz; ++i)
+            {
+                Node* top = q.front(); q.pop();
+                if(top->left) q.push(top->left);
+                if(top->right) q.push(top->right);
+            }
+            
+            // Decrement k to move to the next level
+            k--;
         }
-
-        // Pop the nodes from the front of the queue and push their children into the queue
-        for (int i = 0; i < sz; ++i)
-        {
-            Node *top = q.front();
-            q.pop();
-            if (top->left)
-                q.push(top->left);
-            if (top->right)
-                q.push(top->right);
-        }
-
-        // Decrement k to move to the next level
-        k--;
+        
+        // If we reach here, it means there are no nodes at the desired distance
+        return {};
     }
-
-    // If we reach here, it means there are no nodes at the desired distance
-    return {};
-}
+};

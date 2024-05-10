@@ -10,15 +10,12 @@
 // Also, if a player cannot make a move, they lose the game.
 // Return true if and only if Alice wins the game, assuming both players play optimally.
 
- 
-
 // Example 1:
 
 // Input:
 // n = 2
 // Output: True
 // Explanation: Alice chooses 1, and Bob has no more moves.
- 
 
 // Example 2:
 
@@ -26,7 +23,6 @@
 // n = 3
 // Output: False
 // Explanation: Alice chooses 1, Bob chooses 1, and Alice has no more moves.
- 
 
 // Your Task:
 // You don't need to read input or print anything. Your task is to complete the function divisorGame() which takes an integer n as a parameter and returns true if Alice wins the game.
@@ -37,24 +33,12 @@
 // Constraints:
 // 1 ≤ n ≤ 103
 
-
-
-
-class Solution {
-  public:
-    bool divisorGame(int n) {
+class Solution
+{
+public:
+    bool divisorGame(int n)
+    {
         // code here
-         return (n % 2 == 0);
+        return (n % 2 == 0);
     }
 };
-
-
-
-
-
-
-
-
-
-
-

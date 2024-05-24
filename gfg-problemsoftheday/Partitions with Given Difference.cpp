@@ -36,32 +36,31 @@
 // 0 <= d  <= 25000
 // 0 <= arr[i] <= 50
 
-class Solution
-{
-public:
-    int solve(vector<int> &arr, int i, int d, vector<vector<int>> &dp, int bais, int left)
-    {
-        if (i == arr.size())
-        {
-            return d == 0 ? 1 : 0;
-        }
-        if (left < d)
-            return 0;
-        if (dp[i][d + bais] != -1)
-            return dp[i][d + bais];
-        dp[i][d + bais] = ((long long)solve(arr, i + 1, d + arr[i], dp, bais, left - arr[i]) +
-                           solve(arr, i + 1, d - arr[i], dp, bais, left - arr[i])) %
-                          1000000007;
-        return dp[i][d + bais];
-    }
-    int countPartitions(int n, int d, vector<int> &arr)
-    {
-        // Code here
-        int sum = 0;
 
-        for (auto a : arr)
-            sum += a;
-        vector<vector<int>> dp(n, vector<int>(2 * sum + 1, -1));
-        return solve(arr, 0, d, dp, sum - d, sum);
+
+
+class Solution {
+  public:
+     int mod = 1e9+7;
+    int solve(int idx, int target, vector<int>& arr, vector<vector<int>>& dp){
+        if(target < 0)
+            return 0;
+        if(idx < 0)
+            return target == 0;
+        if(dp[idx][target] != -1)
+            return dp[idx][target];
+        int take = 0, notake = 0;
+        if(arr[idx] <= target)
+            take = solve(idx - 1, target - arr[idx], arr, dp) % mod;
+        notake = solve(idx - 1, target, arr, dp) % mod;
+        return dp[idx][target] = (take + notake) % mod;
+    }
+    int countPartitions(int n, int d, vector<int>& arr) {
+        int total = accumulate(arr.begin(), arr.end(), 0);
+        if((total + d) & 1)
+            return 0;
+        int target = ((total + d) / 2) % mod;
+        vector<vector<int>> dp(n, vector<int>(target + 1, -1));
+        return solve(n - 1, target, arr, dp);
     }
 };

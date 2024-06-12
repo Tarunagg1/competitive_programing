@@ -33,41 +33,74 @@
 // 1 ≤ x, y ≤ n
 // 1 ≤ arr[i], brr[i] ≤ 109
 
-class Solution
-{
-public:
-    long long maxTip(int n, int x, int y, vector<int> &arr, vector<int> &brr)
-    {
-        // code here
-        vector<pair<int, int>> a(n);
-        ll suma = 0, sumb = 0;
-        for (int i = 0; i < n; i++)
-        {
-            a[i] = {arr[i] - brr[i], i};
-            suma += arr[i];
-            sumb += brr[i];
-        }
-        ll curr_sum = 0;
-        ll residue = 0;
-        sort(a.begin(), a.end(), greater<pair<int, int>>());
-        ll ans = -1;
 
-        for (int i = 0; i <= x; i++)
+class Solution {
+  public:
+  static bool cmp(pair<int,int>a,pair<int,int>b)
+    {
+        return a.first > b.first;
+    }
+    
+    long long maxTip(int n, int x, int y, vector<int> &arr, vector<int> &brr) {
+        // code here
+         
+        vector<pair<int,int>>Diff;
+        vector<pair<int,int>>Diff1;
+        for(int i=0; i<n; i++)
         {
-            if (n - i > y)
+            int di = abs(arr[i]-brr[i]);
+            pair<int,int>temp = make_pair(di,arr[i]);
+            pair<int,int>temp1 = make_pair(di,brr[i]);
+            
+            Diff.push_back(temp);
+            Diff1.push_back(temp1);
+        }
+        
+        sort(Diff.begin(),Diff.end(),cmp);
+        sort(Diff1.begin(),Diff1.end(),cmp);
+        
+        long long sum = 0;
+        int cnt = 0;
+
+    // Loop until all orders are processed
+    for(int i=0; i<n; i++)
+        {
+            if(Diff[i].second > Diff1[i].second)
             {
+                if(x > 0)
+                {
+                    sum += Diff[i].second;
+                    x--;
+                    cnt++;
+                }
+                else
+                {
+                    sum += Diff1[i].second;
+                    y--;
+                    cnt++;
+                }
             }
             else
-            {
-                // first i elements are chosen from a and then rem from b
-                ll from_a = curr_sum;
-                ll from_b = sumb - residue;
-                ans = max(ans, from_a + from_b);
+            { 
+                if( y > 0)
+                {
+                    sum += Diff1[i].second;
+                    y--;
+                    cnt++;
+                }
+                else{
+                    sum += Diff[i].second;
+                    x--;
+                    cnt++;
+                }
             }
-            curr_sum += arr[a[i].second];
-            residue += brr[a[i].second];
+            
+            if(cnt >= n)
+            {
+                break;
+            }
+            
         }
-
-        return ans;
+        return sum;
     }
 };

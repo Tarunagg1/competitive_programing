@@ -41,7 +41,9 @@ public:
             temp = temp->next;
         }
         if (temp == NULL)
-        {
+        {Make Binary Tree From Linked List
+
+
             (previ->prev)->next = NULL;
             return head;
         }

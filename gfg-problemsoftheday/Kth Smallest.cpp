@@ -21,7 +21,7 @@
 
 // Seen this question in a real interview before ?
 
-class Solution
+iclass Solution
 {
 public:
     // arr : given array

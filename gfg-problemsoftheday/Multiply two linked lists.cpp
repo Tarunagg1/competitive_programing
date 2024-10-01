@@ -24,28 +24,26 @@
 // 1 <= number of nodes <= 105
 // 1 <= node->data <= 103
 
+const int c = 1e9 + 7;
+
+long long convert(Node *x)
+{
+    long long ans = 0;
+    Node *temp = x;
+    while (temp)
+    {
+        ans = ((ans * 10) % c + (temp->data) % c) % c;
+        temp = temp->next;
+    }
+    return ans % c;
+}
 class solution
 {
 public:
     long long multiplyTwoLists(Node *first, Node *second)
     {
-        // code here
-        long MOD = 1000000007;
-
-        long num1 = 0;
-        while (first != null)
-        {
-            num1 = (num1 * 10 + first.data) % MOD;
-            first = first.next;
-        }
-
-        long num2 = 0;
-        while (second != null)
-        {
-            num2 = (num2 * 10 + second.data) % MOD;
-            second = second.next;
-        }
-
-        return (num1 * num2) % MOD;
+        long long x = convert(first);
+        long long y = convert(second);
+        long long ans = (x * y) % c;
     }
 };

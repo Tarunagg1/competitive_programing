@@ -43,7 +43,9 @@ public:
             else
             {
                 num = arr[i];
-                count = 1;
+                count = 1;Nearest multiple of 10
+
+
             }
         }
         return num;

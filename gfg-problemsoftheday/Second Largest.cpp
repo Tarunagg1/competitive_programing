@@ -19,48 +19,31 @@
 // 2 ≤ arr.size() ≤ 105
 // 1 ≤ arr[i] ≤ 105
 
-
-class Solution {
-  public:
+class Solution
+{
+public:
     // Function returns the second
     // largest elements
-    int getSecondLargest(vector<int> &arr) {
+    int getSecondLargest(vector<int> &arr)
+    {
         // Code Here
-          int first_max =  INT_MIN;
+        int first_max = INT_MIN;
         int second_max = INT_MIN;
-        
-        for(int i = 0; i < arr.size(); i++)
+
+        for (int i = 0; i < arr.size(); i++)
         {
-            if(arr[i] > first_max)
+            if (arr[i] > first_max)
             {
                 second_max = first_max;
                 first_max = arr[i];
-                
             }
-            else if(arr[i] > second_max and arr[i] != first_max)
+            else if (arr[i] > second_max and arr[i] != first_max)
             {
                 second_max = arr[i];
             }
         }
-       // cout << first_max << " " << second_max << endl;
-        
-        return (second_max == INT_MIN ) ? -1 : second_max;
+        // cout << first_max << " " << second_max << endl;
+
+        return (second_max == INT_MIN) ? -1 : second_max;
     }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

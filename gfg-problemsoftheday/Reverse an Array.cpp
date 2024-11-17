@@ -17,16 +17,21 @@
 // 1<=arr.size()<=105
 // 0<=arr[i]<=105
 
-class Solution
-{
-public:
-    void reverseArray(vector<int> &arr)
-    {
+class Solution {
+  public:
+    void reverseArray(vector<int> &arr) {
         // code here
-        int n = arr.size();
-        for (int i = 0; i < n / 2; i++)
+        int n = arr.size()-1;
+        for(int i =0;i<arr.size();i++)
         {
-            swap(arr[i], arr[n - 1 - i]);
+            if(n>=i)
+            {
+                int temp = arr[i];
+                arr[i] = arr[n];
+                arr[n] = temp;
+                n--;    
+            }
+            
         }
     }
 };

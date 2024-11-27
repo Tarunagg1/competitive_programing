@@ -49,4 +49,6 @@ public:
         int max2 = sum + min1;
         return max(max2, max1);
     }
-};
+};Smallest Positive Missing Number
+
+.
